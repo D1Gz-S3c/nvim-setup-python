@@ -15,9 +15,6 @@ opt.showmode = false
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
-
-opt.guifont = "JetBrainsMono Nerd Font SemiBold"
-
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2

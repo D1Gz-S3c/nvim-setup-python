@@ -15,9 +15,9 @@ M.general = {
     ["<C-k>"] = { "<Up>", "Move up" },
 
     -- Move current line / block with Alt-j/k ala vscode.
-    ["<A-j>"] = { "<Esc>:m .+1<CR>==gi" },
+    ["<A-j>"] = { "<Esc>:m .+1<CR>==" },
     -- Move current line / block with Alt-j/k ala vscode.
-    ["<A-k>"] = { "<Esc>:m .-2<CR>==gi" },
+    ["<A-k>"] = { "<Esc>:m .-2<CR>==" },
 
   },
 
@@ -27,18 +27,19 @@ M.general = {
     -- Move current line / block with Alt-j/k ala vscode.
     ["<A-k>"] = { "<Esc>:m .-2<CR>==gi" },
 
-    -- Resize with arrows
-    ["<C-Up>"] = { ":resize -2<CR>" },
-    ["<C-Down>"] = { ":resize +2<CR>" },
-    ["<C-Left>"] = { ":vertical resize -2<CR>" },
-    ["<C-Right>"] = { ":vertical resize +2<CR>" },
-
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
     -- switch between windows
     ["<C-h>"] = { "<C-w>h", "Window left" },
     ["<C-l>"] = { "<C-w>l", "Window right" },
     ["<C-j>"] = { "<C-w>j", "Window down" },
     ["<C-k>"] = { "<C-w>k", "Window up" },
+
+        -- Resize with arrows
+    ["<C-Up>"] = { ":resize -2<CR>" },
+    ["<C-Down>"] = { ":resize +2<CR>" },
+    ["<C-Left>"] = { ":vertical resize -2<CR>" },
+    ["<C-Right>"] = { ":vertical resize +2<CR>" },
+
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
@@ -82,7 +83,6 @@ M.general = {
 
     ["<"] = { "<gv" },
     [">"] = { ">gv" },
-
   },
 
   x = {

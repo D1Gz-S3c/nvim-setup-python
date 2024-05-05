@@ -55,7 +55,7 @@ local plugins = {
         "debugpy",
         "mypy",
         "ruff-lsp",
-        "pyright",
+        "jedi-language-server",
       },
     },
   },
