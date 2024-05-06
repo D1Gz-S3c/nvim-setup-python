@@ -1,6 +1,6 @@
 local options = {
   filters = {
-    dotfiles = false,
+    dotfiles = true,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
   disable_netrw = true,
@@ -11,16 +11,22 @@ local options = {
   update_focused_file = {
     enable = true,
     update_root = false,
+    update_cwd = true,
+    ignore_list = {},
+  },
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
   },
   view = {
-    adaptive_size = false,
+    adaptive_size = true,
     side = "left",
-    width = 30,
+    width = 28,
     preserve_window_proportions = true,
   },
   git = {
-    enable = false,
-    ignore = true,
+    enable = true,
+    ignore = false,
   },
   filesystem_watchers = {
     enable = true,
@@ -31,8 +37,8 @@ local options = {
     },
   },
   renderer = {
-    root_folder_label = false,
-    highlight_git = false,
+    root_folder_label = true,
+    highlight_git = true,
     highlight_opened_files = "none",
 
     indent_markers = {
@@ -44,7 +50,7 @@ local options = {
         file = true,
         folder = true,
         folder_arrow = true,
-        git = false,
+        git = true,
       },
 
       glyphs = {
